@@ -1,0 +1,14 @@
+package com.byrfb.objects;
+
+public class Kontenjan {
+	private String universite;
+	private String fakulte;
+	private String brans;
+	private int kontenjanSayisi;
+	private int yerlesen;
+	private int bosKontenjan;
+	private float enKucuk;
+	private float enBuyuk;
+	
+
+}

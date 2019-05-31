@@ -1,0 +1,15 @@
+{
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "main.Main",
+           "classPaths": [],
+           "console": "integratedTerminal",
+            "projectName": "VsCodeJavaTest_c8c2cdb5",
+           
+        }
+    ]
+}

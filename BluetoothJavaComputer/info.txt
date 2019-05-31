@@ -1,0 +1,6 @@
+Bu projende kardeşim
+blutooth üzrrinden android ile veri alışverişi yapabiliyorsun tamam mı? burada
+3 tane class var bunlar birbiri ile thread olarak bağlantıolı
+remote olan ana sınıf sonra wait thread ile bağlantıları tarıyor.
+bağlantı alırsa process threadi başlatıp habire gelen var mı diye bakıyor.
+process teki write metoduyla da istediğin şekilde gönderrebiliyorsun hardeşim

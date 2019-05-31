@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+
+
+		 <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:deneme.db</property>
+         <property name="connection.username"></property>
+        <property name="connection.password"></property>
+
+<!-- 		Konsolda yapılan işlemlerin sql sorgusu gösterilsin mi -->
+		<property name="show_sql">true</property>
+
+<!-- 		Burası create olursa tablo her defasında yeniden oluşturulur -->
+<!-- 		Update olur ise veritabanı silinmez üzerine ekleme yapılır -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Burası ise veritabanımıza haritalanacak olan personel sınıfımızın 
+			yolu -->
+		<mapping class="com.byrfb.entities.Telefon" />
+
+	</session-factory>
+
+</hibernate-configuration>

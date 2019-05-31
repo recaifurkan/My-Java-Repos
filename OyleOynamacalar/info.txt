@@ -1,0 +1,1 @@
+burada işte j native hook ve robot kullanıalarak genel fare ve klavye bilgileri okunup tekrardan bunlara geri dönüşler yapılmıştır yalnız görev yönetici açılınca iptal olmakta

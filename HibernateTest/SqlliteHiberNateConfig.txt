@@ -1,0 +1,19 @@
+
+
+bunun için önce hibernate ekliyosun sonra sqllite jdbc ekliyorsun daha sonra
+sqllitedialect var onu da src altýna týyosun sonra alttalki config olaný giriyorsun sonra takýr takýr
+
+
+
+		 <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:deneme.db</property>
+         <property name="connection.username"></property>
+        <property name="connection.password"></property>
+
+<!-- 		Konsolda yapýlan iþlemlerin sql sorgusu gösterilsin mi -->
+		<property name="show_sql">true</property>
+
+<!-- 		Burasý create olursa tablo her defasýnda yeniden oluþturulur -->
+<!-- 		Update olur ise veritabaný silinmez üzerine ekleme yapýlýr -->
+		<property name="hbm2ddl.auto">update</property>

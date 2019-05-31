@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChartSortTest",
+            "request": "launch",
+            "mainClass": "tests.ChartSortTest",
+            "projectName": "MesafeSorter"
+        }
+    ]
+}

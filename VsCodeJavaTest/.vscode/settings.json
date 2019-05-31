@@ -1,0 +1,11 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+
+    "java.completion.enabled": true,
+    "java.classPath": [],
+    "java.autobuild.enabled": true,
+    "java.format.enabled": true,
+    "java.completion.overwrite": true,
+    "java.home": "E:\\Program Files\\Java\\jdk1.8.0_201",
+ 
+}

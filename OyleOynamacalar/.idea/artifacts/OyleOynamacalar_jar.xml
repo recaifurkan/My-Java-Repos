@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="OyleOynamacalar:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OyleOynamacalar_jar</output-path>
+    <root id="root">
+      <element id="archive" name="OyleOynamacalar.jar">
+        <element id="module-output" name="OyleOynamacalar" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="file-copy" path="$PROJECT_DIR$/libs/jnativehook/jar/jnativehook-2.1.0.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

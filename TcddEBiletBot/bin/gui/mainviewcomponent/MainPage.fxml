@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="184.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mainviewcomponent.MainPageController">
+   <children>
+      <VBox fillWidth="false" prefHeight="265.0" prefWidth="194.1078125" snapToPixel="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Kalkış Yeri" />
+            <TextField fx:id="txtKalkis" />
+            <Label text="Kişi sayısı" />
+            <TextField fx:id="txtKisi" />
+            <Label text="Varış Yeri" />
+            <TextField fx:id="txtVaris" />
+            <Label text="Tarih Seçiniz" />
+            <DatePicker fx:id="dateTarih" />
+            <HBox>
+               <children>
+                  <Button fx:id="btnCalistir" mnemonicParsing="false" onAction="#calistir" text="Çalıştır" />
+                  <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#sustur" text="Çaldır" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

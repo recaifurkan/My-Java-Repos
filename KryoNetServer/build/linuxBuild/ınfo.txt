@@ -1,0 +1,1 @@
+kardeş bunu kullanmak için java 1.8.0_201 indir rahat çalıştır

@@ -1,0 +1,1 @@
+java -Djava.library.path=Fx_lib/windows -jar Fx.jar 

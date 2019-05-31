@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="KryoNetServer:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/KryoNetServer_jar</output-path>
+    <root id="archive" name="KryoNetServer.jar">
+      <element id="module-output" name="KryoNetServer" />
+      <element id="extracted-dir" path="F:/Libraries/Java/kryonet-2.21/jars/debug/onejar/kryonet-2.21-all.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="JavaFxInSwing:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/JavaFxInSwing_jar</output-path>
+    <root id="root">
+      <element id="archive" name="JavaFxInSwing.jar">
+        <element id="module-output" name="JavaFxInSwing" />
+      </element>
+      <element id="library" level="module" name="lwjgl.jar" module-name="JavaFxInSwing" />
+    </root>
+  </artifact>
+</component>
