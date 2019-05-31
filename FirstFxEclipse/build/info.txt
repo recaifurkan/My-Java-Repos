@@ -1,1 +1,0 @@
-kardeş bu program için java 1.8.0_201 kullanacaksın o zaman heryerde çalışırı
