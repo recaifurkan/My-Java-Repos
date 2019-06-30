@@ -6,7 +6,8 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.PerspectiveCamera;
-
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g3d.utils.FirstPersonCameraController;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
@@ -15,28 +16,37 @@ import com.byrfb.kinematic.Link;
 import com.byrfb.main.Robot;
 
 public class Robot3d implements ApplicationListener {
-	
+	SpriteBatch batch;
 	ShapeRenderer renderer;
 	Robot robot;
 	Camera cam;
 	FirstPersonCameraController inputController;
-
+	
+	BitmapFont font;
+	CharSequence text = "" + "Arttýrma iþlemleri için farklý tuþlara bakmanýz gerekmekte \n"
+			+ "1 tuþu açý arttýrm azaltma \n" + "2 tuþu da bi açý olmasý lazým \n"
+			+ "3 ve 4 tuþlarý uzunluklarý deðiþtirmeye hyarar \n"
+			+ "+ tuþuna basarak arttýtma mý azalma mý yaoýlcak karar verirlir \n"
+			+ "sað tuþa basarak linki deðiþtirebilirsiniz";
+	
 	@Override
 	public void create() {
 		renderer = new ShapeRenderer();
+		batch = new SpriteBatch();
 		robot = new Robot();
+
 		cam = new PerspectiveCamera(72, 800, 800);
+		font = new BitmapFont(Gdx.files.internal("font/arial-15.fnt"), Gdx.files.internal("font/arial-15.png"), false);
 		inputController = new FirstPersonCameraController(cam);
 		Gdx.input.setInputProcessor(inputController);
 		Link link0 = robot.getTable().getLinks().get(0);
-		cam.combined.translate(-10,-68,-32);
+		cam.combined.translate(-10, -68, -32);
 		cam.lookAt(link0.getCoord().x, link0.getCoord().y, link0.getCoord().z);
-		
+
 	}
 
 	@Override
 	public void resize(int width, int height) {
-		
 		
 	}
 
@@ -76,6 +86,13 @@ public class Robot3d implements ApplicationListener {
 		
 		renderer.end();
 		
+	    batch.begin();
+
+	    font.draw(batch, text, 0, Gdx.graphics.getHeight() - 10);
+
+	    batch.end();
+	  
+		
 	}
 	
 	int index = 1;
@@ -84,30 +101,24 @@ public class Robot3d implements ApplicationListener {
 
 	private void update() {
 		/*
-		 * burda + tuþuna basýnca azalma mý yapýlcak artma mý yapýlcak seçilmesi yapýloýyor
-		 * 1 tuþu joint angle deðiþtirir
-		 * diðerleri zaten yazýyopr ne olsuðu
+		 * burda + tuþuna basýnca azalma mý yapýlcak artma mý yapýlcak seçilmesi
+		 * yapýloýyor 1 tuþu joint angle deðiþtirir diðerleri zaten yazýyopr ne olsuðu
 		 * 
 		 * 
 		 * 
 		 * 
 		 */
-		
-		
+
 		if (Gdx.input.isKeyJustPressed(Input.Keys.PLUS)) {
 			arttir = !arttir;
 		}
-		
-		if(arttir) {
+
+		if (arttir) {
 			arttirmaVel = 5;
-		}
-		else {
+		} else {
 			arttirmaVel = -5;
 		}
-			
-		
-		
-		
+
 		if (Gdx.input.isKeyPressed(Input.Keys.NUMPAD_1)) {
 
 			Link link = robot.getTable().getLinks().get(index);
@@ -115,7 +126,7 @@ public class Robot3d implements ApplicationListener {
 
 //			
 		}
-		
+
 		if (Gdx.input.isKeyPressed(Input.Keys.NUMPAD_2)) {
 
 			Link link = robot.getTable().getLinks().get(index);
@@ -123,7 +134,7 @@ public class Robot3d implements ApplicationListener {
 
 //			
 		}
-		
+
 		if (Gdx.input.isKeyPressed(Input.Keys.NUMPAD_3)) {
 
 			Link link = robot.getTable().getLinks().get(index);
@@ -131,7 +142,7 @@ public class Robot3d implements ApplicationListener {
 
 //			
 		}
-		
+
 		if (Gdx.input.isKeyPressed(Input.Keys.NUMPAD_4)) {
 
 			Link link = robot.getTable().getLinks().get(index);
@@ -148,32 +159,31 @@ public class Robot3d implements ApplicationListener {
 
 //		
 		}
-		
+
 		System.out.println(index);
-		
+
 		robot.update();
 		inputController.update();
 //		System.out.println(cam.combined.getTranslation(new Vector3()));
-
 
 	}
 
 	@Override
 	public void pause() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void resume() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void dispose() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
