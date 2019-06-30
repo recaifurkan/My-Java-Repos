@@ -39,15 +39,15 @@ public class Link {
 		this.jointAngle = jointAngle;
 		this.linkLenght = linkLenght;
 		this.linkTwist = linkTwist;
-		this.sethomogenousMatrix();
+		this.setHomogenousMatrix();
 
 	}
 	
 	public void update() {
-		sethomogenousMatrix();
+		setHomogenousMatrix();
 	}
 	
-	public void sethomogenousMatrix() {
+	public void setHomogenousMatrix() {
 		float [] values = new float[] {
 			(float) Math.cos(Math.toRadians(jointAngle)),
 			(float) (-Math.sin(Math.toRadians(jointAngle))*Math.cos(Math.toRadians(linkTwist))),
