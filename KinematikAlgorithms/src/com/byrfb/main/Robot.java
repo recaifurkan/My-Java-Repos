@@ -10,6 +10,9 @@ public class Robot {
 	 * 
 	 * 
 	 */
+
+	
+	// TODO  inverse kinematic eklenecek
 	
 
 	DHTable table = new DHTable();
