@@ -1,0 +1,11 @@
+[
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 1, "id": 2 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 },
+  { "class": "com.byrfb.net.objects.Post", "userId": 0, "id": 0 }
+]

@@ -13,7 +13,7 @@ public class GameChooser {
 	ApplicationListener game;
 
 	public ApplicationListener getGame() {
-		this.game = new GeometryDrawApplication();
+		this.game = new ExtensionsTestMain();
 		return game;
 	}
 
