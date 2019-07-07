@@ -11,9 +11,9 @@ public class DebugPanel {
 	String getText() {
 		return 
 		addLine("Fps : " + Gdx.graphics.getFramesPerSecond())+
-		addLine("Delta Time : " + Gdx.graphics.getDeltaTime())+
-		addLine("Frame I : " + Gdx.graphics.getFrameId())+
-		addLine("Native Heap : " + Gdx.app.getNativeHeap()) + 
+//		addLine("Delta Time : " + Gdx.graphics.getDeltaTime())+
+//		addLine("Frame I : " + Gdx.graphics.getFrameId())+
+//		addLine("Native Heap : " + Gdx.app.getNativeHeap()) + 
 		addLine("App Type : " + Gdx.app.getType())
 //		addLine("Instances size : " + bulletTest.getInstances().size) +
 //				addLine("World Object size : " + bulletTest.getDynamicsWorld().getCollisionObjectArray().size())+

@@ -53,6 +53,7 @@ public class TestApplication extends ApplicationAdapter {
 		Gdx.input.setInputProcessor(stage);
 
 		menuBar = new MenuBar();
+		
 		menuBar.setMenuListener(new MenuBar.MenuBarListener() {
 			@Override
 			public void menuOpened (Menu menu) {

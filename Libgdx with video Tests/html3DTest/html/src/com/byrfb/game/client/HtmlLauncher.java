@@ -7,6 +7,7 @@ import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
 
 import com.byrfb.game.GameChooser;
 import com.byrfb.game.LoadSceneTest;
+import com.byrfb.libgdxgui.GuiDesign;
 import com.google.gwt.event.logical.shared.ResizeEvent;
 import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.user.client.Window;

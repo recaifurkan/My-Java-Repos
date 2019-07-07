@@ -10,8 +10,8 @@ public class VisUiTestLauncher {
 	public static void main (String[] args) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.title = "VisUI test application";
-		config.width = 1280;
-		config.height = 720;
+		config.width = 800;
+		config.height = 800;
 		new LwjglApplication(new TestApplication(), config);
 	}
 
