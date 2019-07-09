@@ -1,8 +1,7 @@
-package com.byrfb.bullet3dcontacttests;
+package com.bulletphysics.test.bullet3dcontacttests;
 
 import com.badlogic.gdx.InputProcessor;
 import com.bulletphysics.linearmath.DebugModesType;
-import com.byrfb.guis.ExitFrame;
 
 public class Input implements InputProcessor {
 	BulletTest bulletTest;

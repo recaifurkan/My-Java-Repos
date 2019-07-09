@@ -1,5 +1,5 @@
 
-package com.byrfb.bullet3dcontacttests;
+package com.bulletphysics.test.bullet3dcontacttests;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
@@ -56,7 +56,7 @@ import com.bulletphysics.dynamics.constraintsolver.SequentialImpulseConstraintSo
 
 import com.bulletphysics.linearmath.MotionState;
 import com.bulletphysics.linearmath.Transform;
-import com.byrfb.bullet3dcontacttests.BulletTest.GameObject.Constructor;
+import com.bulletphysics.test.bullet3dcontacttests.BulletTest.GameObject.Constructor;
 
 import com.byrfb.debug.DebugPanel;
 

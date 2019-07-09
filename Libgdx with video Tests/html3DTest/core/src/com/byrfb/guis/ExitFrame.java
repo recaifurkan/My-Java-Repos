@@ -1,6 +1,5 @@
 package com.byrfb.guis;
 
-import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
@@ -10,16 +9,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import com.badlogic.gdx.Gdx;
-import com.byrfb.bullet3dcontacttests.BulletTest;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.BoxLayout;
-import javax.swing.JTable;
-import javax.swing.JList;
-import javax.swing.JLabel;
 
 public class ExitFrame extends JFrame {
 

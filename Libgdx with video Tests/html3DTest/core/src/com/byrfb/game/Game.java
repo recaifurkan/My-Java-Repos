@@ -6,7 +6,7 @@ import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.byrfb.jbullet.HelloWorld;
+import com.bulletphysics.test.HelloWorld;
 import com.byrfb.jsLibraries.Library;
 
 public class Game extends ApplicationAdapter {

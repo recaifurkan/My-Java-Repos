@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglCanvas;
-import com.byrfb.bullet3dcontacttests.BulletTest;
+import com.bulletphysics.test.bullet3dcontacttests.BulletTest;
 
 import java.awt.Canvas;
 import java.awt.Color;

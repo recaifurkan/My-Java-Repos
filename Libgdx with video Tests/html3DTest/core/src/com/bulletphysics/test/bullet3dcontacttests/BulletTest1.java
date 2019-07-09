@@ -1,5 +1,5 @@
 
-package com.byrfb.bullet3dcontacttests;
+package com.bulletphysics.test.bullet3dcontacttests;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
@@ -42,8 +42,8 @@ import com.bulletphysics.collision.shapes.CylinderShape;
 import com.bulletphysics.collision.shapes.SphereShape;
 
 import com.bulletphysics.linearmath.Transform;
-import com.byrfb.bullet3dcontacttests.objects.Constructor;
-import com.byrfb.bullet3dcontacttests.objects.GameObject;
+import com.bulletphysics.test.bullet3dcontacttests.objects.Constructor;
+import com.bulletphysics.test.bullet3dcontacttests.objects.GameObject;
 
 /** @see https://xoppa.github.io/blog/using-the-libgdx-3d-physics-bullet-wrapper-part2/
  * @author Xoppa */

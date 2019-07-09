@@ -3,8 +3,7 @@ package com.byrfb.debug;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.bulletphysics.linearmath.DebugModesType;
-import com.byrfb.bullet3dcontacttests.BulletTest;
+import com.bulletphysics.test.bullet3dcontacttests.BulletTest;
 
 public class DebugPanel {
 	

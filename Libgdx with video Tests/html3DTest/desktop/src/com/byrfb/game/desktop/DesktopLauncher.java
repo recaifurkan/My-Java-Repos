@@ -6,7 +6,7 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.byrfb.game.GameChooser;
 
 public class DesktopLauncher {
-	public static void main (String[] arg) {
+	public static void main(String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.vSyncEnabled = true;
 		config.width = 800;
@@ -14,7 +14,7 @@ public class DesktopLauncher {
 		config.foregroundFPS = 120;
 		config.backgroundFPS = 120;
 //		config.fullscreen = true;
-		
+
 		new LwjglApplication(new GameChooser().getGame(), config);
 	}
 }

@@ -2,11 +2,13 @@
 <!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit trunk//EN" "http://www.gwtproject.org/doctype/2.8.0/gwt-module.dtd">
 <module>
 
+
+
 	<extend-configuration-property
 		name="gdx.reflect.include" value="com.byrfb.net.objects.Post" />
 
 
-
+	<inherits name='BulletPhysics' />
 	<source path='com/byrfb'>
 		<exclude name="**/guis/**" />
 		<exclude name="**/gdxvideo/**" />
@@ -19,7 +21,7 @@
 
 
 	<inherits name='com.google.gwt.core.Core' />
-	<inherits name='BulletPhysics' />
+
 
 	<source path='com/visui/test' />
 
