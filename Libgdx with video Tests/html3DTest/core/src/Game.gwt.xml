@@ -4,15 +4,21 @@
 
 
 
-	<extend-configuration-property
-		name="gdx.reflect.include" value="com.byrfb.net.objects.Post" />
+
+
+	
 
 
 	<inherits name='BulletPhysics' />
+
 	<source path='com/byrfb'>
 		<exclude name="**/guis/**" />
 		<exclude name="**/gdxvideo/**" />
 	</source>
+	
+	
+		
+	
 
 
 

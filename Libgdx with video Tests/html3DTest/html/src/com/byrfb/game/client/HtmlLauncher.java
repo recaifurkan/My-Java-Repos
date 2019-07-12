@@ -4,10 +4,10 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-
 import com.byrfb.game.GameChooser;
 import com.byrfb.game.LoadSceneTest;
 import com.byrfb.libgdxgui.GuiDesign;
+import com.byrfb.platformsbridges.PlatformsBridge;
 import com.byrfb.socketio.GwtSocketIO;
 import com.byrfb.socketio.tests.SocketIoLauncher;
 import com.google.gwt.event.logical.shared.ResizeEvent;
@@ -60,7 +60,7 @@ public class HtmlLauncher extends GwtApplication {
 //        	cretor.create();
 		GameChooser chooser = new GameChooser();
 
-		SocketIoLauncher.socket = new GwtSocketIO();
+		PlatformsBridge.socket = new GwtSocketIO();
 
 		return chooser.getGame();
 	}

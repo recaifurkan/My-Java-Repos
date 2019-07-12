@@ -35,7 +35,6 @@ public class MainScreen extends ScreenAdapter {
 
 	DebugPanel panel;
 	private Stage stage;
-	private MenuBar menuBar;
 	VisTable root;
 
 	@Override
@@ -79,8 +78,7 @@ public class MainScreen extends ScreenAdapter {
 	private void guiDesign() {
 		root.clearChildren();
 		root.debug();
-//		root.addSeparator(); //horizontal
-//		root.addSeparator(true); //vertical
+
 
 		VisTextButton button = new VisTextButton("Button");
 		root.add(button);
