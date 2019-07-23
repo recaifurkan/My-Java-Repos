@@ -9,7 +9,7 @@
 	
 
 
-	<inherits name='BulletPhysics' />
+	
 
 	<source path='com/byrfb'>
 		<exclude name="**/guis/**" />

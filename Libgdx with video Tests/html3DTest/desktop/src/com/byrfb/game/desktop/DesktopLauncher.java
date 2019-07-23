@@ -14,6 +14,7 @@ public class DesktopLauncher {
 		config.height = 800;
 		config.foregroundFPS = 120;
 		config.backgroundFPS = 120;
+		
 
 		PlatformsBridge.socket = new NativeSocketIo();
 

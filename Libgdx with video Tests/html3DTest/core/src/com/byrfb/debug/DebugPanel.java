@@ -1,9 +1,10 @@
 package com.byrfb.debug;
 
+import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.bulletphysics.test.bullet3dcontacttests.BulletTest;
+
 
 public class DebugPanel {
 	
@@ -27,14 +28,14 @@ public class DebugPanel {
 
 	SpriteBatch spriteBatch;
 	BitmapFont font;
-	private BulletTest bulletTest;
+	private ApplicationListener bulletTest;
 	
 
 	public DebugPanel() {
 		this(null);
 	}
 
-	public DebugPanel(BulletTest bulletTest) {
+	public DebugPanel(ApplicationListener bulletTest) {
 		this.bulletTest = bulletTest;
 		spriteBatch = new SpriteBatch();
 		font = new BitmapFont();
