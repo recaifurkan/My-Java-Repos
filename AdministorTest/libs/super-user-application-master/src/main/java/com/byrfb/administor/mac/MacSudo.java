@@ -1,4 +1,4 @@
-package com.vnetpublishing.java.suapp.mac;
+package com.byrfb.administor.mac;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.vnetpublishing.java.suapp.ISudo;
+import com.byrfb.administor.ISudo;
 
 public class MacSudo implements ISudo {
 

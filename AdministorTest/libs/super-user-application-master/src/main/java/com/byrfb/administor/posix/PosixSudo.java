@@ -1,4 +1,4 @@
-package com.vnetpublishing.java.suapp.posix;
+package com.byrfb.administor.posix;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.vnetpublishing.java.suapp.ISudo;
-import com.vnetpublishing.java.suapp.SU;
+import com.byrfb.administor.ISudo;
+import com.byrfb.administor.SUDO;
 
 public class PosixSudo implements ISudo {
 
@@ -170,7 +170,7 @@ public class PosixSudo implements ISudo {
 		holdargs.addAll(args);
 		args.clear();
 
-		if (SU.prefer_stdio) {
+		if (SUDO.prefer_stdio) {
 			// Try sudo
 			s = new File("/usr/bin/sudo");
 			if (s.canExecute()) {

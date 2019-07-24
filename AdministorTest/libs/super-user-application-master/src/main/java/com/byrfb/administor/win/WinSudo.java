@@ -1,27 +1,22 @@
-package com.vnetpublishing.java.suapp.win;
+package com.byrfb.administor.win;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.lang.management.ManagementFactory;
 import java.net.URLDecoder;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.sun.jna.*;
+import com.byrfb.administor.ISudo;
+import com.byrfb.administor.SUDO;
 import com.sun.jna.platform.win32.Kernel32;
 import com.sun.jna.platform.win32.Kernel32Util;
 import com.sun.jna.platform.win32.WinNT.HANDLE;
-import com.sun.jna.ptr.ByteByReference;
 import com.sun.jna.ptr.IntByReference;
-import com.vnetpublishing.java.suapp.ISudo;
-import com.vnetpublishing.java.suapp.SU;
-import com.vnetpublishing.java.suapp.win.Kernel32X.JOBOBJECT_EXTENDED_LIMIT_INFORMATION;
-import com.vnetpublishing.java.suapp.win.Shell32X.SHELLEXECUTEINFO;
 
-public class WinSudo implements ISudo 
+public class WinSudo implements ISudo
 {
 	
 	
@@ -89,7 +84,7 @@ public class WinSudo implements ISudo
 	
 	public static int executeAsAdministrator(String command, String args)
 	{
-		if (SU.debug) {
+		if (SUDO.debug) {
 			System.err.println(String.format("executeAsAdministrator(%s,%s)",String.valueOf(command),String.valueOf(args)));
 		}
 		
@@ -108,7 +103,7 @@ public class WinSudo implements ISudo
 		if ("Windows Vista".equals(os) || "Windows 7".equals(os)) {
 			try {
 				String lpDirectory = getMSDOSName(System.getProperty("user.dir"));
-				if (SU.debug) {
+				if (SUDO.debug) {
 					System.err.println(String.format("using lpDirectory = '%s'",lpDirectory));					
 				}
 				execInfo.lpDirectory = lpDirectory;
@@ -154,7 +149,7 @@ public class WinSudo implements ISudo
 			System.err.println("WARNING: Error in SetInformationJobObject: " + lastError + ": " + errorMessage);
 		}
 		
-		if (SU.debug) {
+		if (SUDO.debug) {
 			execInfo.nShow = Shell32X.SW_SHOWDEFAULT;
 		} else {
 			execInfo.nShow = Shell32X.SW_HIDE;
@@ -211,7 +206,7 @@ public class WinSudo implements ISudo
 			String jarPath = WinSudo.class.getProtectionDomain().getCodeSource().getLocation().getPath();
 			String decodedPath = URLDecoder.decode(jarPath, "UTF-8");
 
-			if (SU.debug) {
+			if (SUDO.debug) {
 				System.err.println(String.format("jar path  = '%s'",decodedPath));
 
 			}
@@ -220,7 +215,7 @@ public class WinSudo implements ISudo
 		
 			String os = System.getProperty("os.name");
 			
-			if (SU.debug) {
+			if (SUDO.debug) {
 				System.err.println(String.format("os.name = '%s'",os));
 				System.err.println(String.format("user.dir = '%s'",System.getProperty("user.dir")));
 			}
@@ -238,7 +233,7 @@ public class WinSudo implements ISudo
 			String jcmd = System.getProperty("sun.java.command");
 			
 			if (jcmd == null || jcmd.length() < 1) {
-				if (SU.debug) {
+				if (SUDO.debug) {
 					System.err.println("WARNING: Missing sun.java.command");
 				}
 				if (decodedPath.endsWith(".jar")) {
@@ -262,7 +257,7 @@ public class WinSudo implements ISudo
 				}
 				
 
-				if (SU.debug) {
+				if (SUDO.debug) {
 					System.err.print("DEBUG: inputArguments: ");
 					System.err.println(pargs);
 				}
@@ -278,7 +273,7 @@ public class WinSudo implements ISudo
 				}
 			}
 			
-			if (SU.debug) {
+			if (SUDO.debug) {
 				System.err.println(pargs);
 			}
 			
@@ -286,7 +281,7 @@ public class WinSudo implements ISudo
 			
 			
 			if ("Windows Vista".equals(os) || "Windows 7".equals(os)) {
-				if (SU.debug) {
+				if (SUDO.debug) {
 					System.err.println("DEBUG: Windows 7 or vista, using cmd shell");
 				}
 				try {
@@ -305,7 +300,7 @@ public class WinSudo implements ISudo
 					throw new IllegalStateException("Unable to get java path name",e);
 				}
 			} else {
-				if (SU.debug) {
+				if (SUDO.debug) {
 					System.err.println("DEBUG: Not Windows 7 or Vista");
 				}
 			}

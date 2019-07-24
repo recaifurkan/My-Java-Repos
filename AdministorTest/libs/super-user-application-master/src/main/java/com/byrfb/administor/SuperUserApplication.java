@@ -1,14 +1,14 @@
-package com.vnetpublishing.java.suapp;
+package com.byrfb.administor;
 
 import java.util.logging.Logger;
 
-import com.vnetpublishing.java.suapp.linux.LinuxSudo;
-import com.vnetpublishing.java.suapp.mac.MacSudo;
-import com.vnetpublishing.java.suapp.mac.MacSuperUserDetector;
-import com.vnetpublishing.java.suapp.posix.PosixSudo;
-import com.vnetpublishing.java.suapp.posix.PosixSuperUserDetector;
-import com.vnetpublishing.java.suapp.win.WinSudo;
-import com.vnetpublishing.java.suapp.win.WinSuperUserDetector;
+import com.byrfb.administor.linux.LinuxSudo;
+import com.byrfb.administor.mac.MacSudo;
+import com.byrfb.administor.mac.MacSuperUserDetector;
+import com.byrfb.administor.posix.PosixSudo;
+import com.byrfb.administor.posix.PosixSuperUserDetector;
+import com.byrfb.administor.win.WinSudo;
+import com.byrfb.administor.win.WinSuperUserDetector;
 
 public abstract class SuperUserApplication 
  implements ISuperUserApplication 
@@ -17,7 +17,7 @@ public abstract class SuperUserApplication
 	
 	public final int sudo(String[] args) 
 	{
-		String os = SU.getOS();
+		String os = SUDO.getOS();
 		
 		ISudo sudo = null;
 		
@@ -43,7 +43,7 @@ public abstract class SuperUserApplication
 	public final boolean isSuperUser() 
 	{
 		
-		String os = SU.getOS();
+		String os = SUDO.getOS();
 		
 		ISuperUserDetector detector = null;
 		

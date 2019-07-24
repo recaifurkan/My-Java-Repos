@@ -1,21 +1,16 @@
-package com.vnetpublishing.java.suapp.win;
+package com.byrfb.administor.win;
 
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import com.sun.jna.platform.win32.WinBase;
 import com.sun.jna.ptr.IntByReference;
-import com.sun.jna.ptr.PointerByReference;
 import com.sun.jna.win32.W32APIOptions;
 
 import java.util.Arrays;
 import java.util.List;
 
 import com.sun.jna.Structure;
-import com.sun.jna.platform.win32.BaseTSD.SIZE_T;
-import com.sun.jna.platform.win32.BaseTSD.ULONG_PTR;
-import com.sun.jna.platform.win32.WinDef.ULONGLONG;
-import com.sun.jna.platform.win32.WinNT.LARGE_INTEGER;
-import com.vnetpublishing.java.suapp.win.Shell32X.size_t;
+import com.byrfb.administor.win.Shell32X.size_t;
 
 public interface Kernel32X extends com.sun.jna.platform.win32.Kernel32 {
     Kernel32X INSTANCE = (Kernel32X) Native.loadLibrary("kernel32",

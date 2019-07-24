@@ -1,7 +1,7 @@
 package com.byrfb;
 
-import com.vnetpublishing.java.suapp.SU;
-import com.vnetpublishing.java.suapp.SuperUserApplication;
+import com.byrfb.administor.SUDO;
+import com.byrfb.administor.SuperUserApplication;
 
 
 import java.io.File;
@@ -15,6 +15,18 @@ eğer notAdministor başlarsa administor olarak başlatılmazsa yapılacaklar be
 Yalnız programı artifact ederken superuser kğütüphanesi ile programının aynuı jar içerisinde olmasına dikkat etmelisin
 zaten direk source i de gradle olrak içine ekledin
 
+Bu projede normalde ulaşılamayacakmolan başlangıç klasörğnde bi tane dosya oluşturulmaya çalışıldı ve başarılı  bir
+şekilde oluşturuldu
+
+
+yalnız development yaparken
+jdk da kş java yı yönetici olarak çalıştırı true yapman lazım
+sonra ideyim de yönetici olrak çalıştırırsan çok iyi bir şekilde development yaparsın
+
+artifaxt yaparken de zaten normal bir işlem yapabilirsin
+launch 4 j ile yapacaksan yönetici olraka çalıştırman gerekebilir
+onda da bir tane .manifest dosyası oluşturuyorsun ve o şekilde çalıştırabiliyorsun
+
 
 
 
@@ -23,7 +35,7 @@ public class AdministorTest extends SuperUserApplication {
 
     public static void main(String[] args) {
 
-        SU.run(new AdministorTest(), args);
+        SUDO.run(new AdministorTest(), args);
 
     }
 

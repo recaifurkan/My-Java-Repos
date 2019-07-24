@@ -16,8 +16,8 @@ import with gradle and build and package jar
 ```
 package com.vnetpublishing.java;
 
-import com.vnetpublishing.java.suapp.SU;
-import com.vnetpublishing.java.suapp.SuperUserApplication;
+import SU;
+import SuperUserApplication;
 
 public class TestAdmin extends SuperUserApplication {
 	

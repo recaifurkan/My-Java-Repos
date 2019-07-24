@@ -1,24 +1,25 @@
-package com.vnetpublishing.java.suapp.posix;
+package com.byrfb.administor.mac;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.List;
 
-import com.vnetpublishing.java.suapp.ISuperUserDetector;
+import com.byrfb.administor.ISuperUserDetector;
 
-public class PosixSuperUserDetector
-	implements ISuperUserDetector 
+public class MacSuperUserDetector implements ISuperUserDetector
 {
-
 	private static final String ID_CMD = "/usr/bin/id";
 	
 	public boolean isSuperUser() 
 	{
-		int gid = Short.MAX_VALUE;
+		List<String> group_ids = null;
+		
 		try {
-			Process p = Runtime.getRuntime().exec(new String[] { ID_CMD, "-g" });
+			Process p = Runtime.getRuntime().exec(new String[] { ID_CMD, "-G" });
 			BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
-			gid = Integer.parseInt(r.readLine());
+			group_ids = Arrays.asList(r.readLine().split("\\s+"));
 		} catch (IOException ex) {
 			throw new IllegalStateException("ID command failed",ex);
 		} catch (NumberFormatException ex) {
@@ -27,6 +28,6 @@ public class PosixSuperUserDetector
 			throw new IllegalStateException("ID command not accessible", ex);
 		}
 		
-		return gid == 0;
+		return group_ids.contains("0");
 	}
 }

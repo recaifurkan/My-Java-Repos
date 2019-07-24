@@ -1,15 +1,11 @@
-package com.vnetpublishing.java.suapp.test;
+package com.byrfb.administor.test;
 
 import java.io.File;
-import java.lang.management.ManagementFactory;
-import java.util.Enumeration;
-import java.util.List;
-import java.util.Properties;
 
+import com.byrfb.administor.SuperUserApplication;
 import org.junit.Test;
 
-import com.vnetpublishing.java.suapp.SU;
-import com.vnetpublishing.java.suapp.SuperUserApplication;
+import com.byrfb.administor.SUDO;
 
 import static org.junit.Assert.*;
 
@@ -21,8 +17,8 @@ public class TestApp extends SuperUserApplication {
 	@Test
 	public void sudoTest() {
 
-		SU.setDaemon(true);
-		int result = SU.run(this, new String[]{});
+		SUDO.setDaemon(true);
+		int result = SUDO.run(this, new String[]{});
 		System.out.println(result);
 		assertEquals(0, result);
 	}

@@ -1,4 +1,4 @@
-package com.vnetpublishing.java.suapp.win;
+package com.byrfb.administor.win;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,18 +7,11 @@ import com.sun.jna.IntegerType;
 import com.sun.jna.Native;
 import com.sun.jna.Pointer;
 import com.sun.jna.Structure;
-import com.sun.jna.WString;
-import com.sun.jna.platform.win32.BaseTSD.ULONG_PTR;
 import com.sun.jna.platform.win32.Shell32;
-import com.sun.jna.platform.win32.WinBase.SECURITY_ATTRIBUTES;
 import com.sun.jna.platform.win32.WinDef.HINSTANCE;
 import com.sun.jna.platform.win32.WinDef.HWND;
-import com.sun.jna.platform.win32.WinDef.ULONGLONG;
-import com.sun.jna.platform.win32.WinDef.WORD;
 import com.sun.jna.platform.win32.WinNT.HANDLE;
-import com.sun.jna.platform.win32.WinNT.LARGE_INTEGER;
 import com.sun.jna.platform.win32.WinReg.HKEY;
-import com.sun.jna.ptr.ByteByReference;
 import com.sun.jna.win32.W32APIOptions;
 
 public interface Shell32X extends Shell32

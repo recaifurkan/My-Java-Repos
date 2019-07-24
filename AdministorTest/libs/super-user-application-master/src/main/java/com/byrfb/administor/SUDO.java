@@ -1,6 +1,6 @@
-package com.vnetpublishing.java.suapp;
+package com.byrfb.administor;
 
-public class SU {
+public class SUDO {
 
 	private static boolean daemon = false;
 	public static boolean prefer_stdio = false;

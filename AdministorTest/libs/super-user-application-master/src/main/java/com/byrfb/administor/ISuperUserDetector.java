@@ -1,4 +1,4 @@
-package com.vnetpublishing.java.suapp;
+package com.byrfb.administor;
 
 public interface ISuperUserDetector {
 	public boolean isSuperUser();

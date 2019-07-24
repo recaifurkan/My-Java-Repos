@@ -1,9 +1,9 @@
-package com.vnetpublishing.java.suapp.win;
+package com.byrfb.administor.win;
 
 import java.io.File;
 import java.io.IOException;
 
-import com.vnetpublishing.java.suapp.ISuperUserDetector;
+import com.byrfb.administor.ISuperUserDetector;
 
 public class WinSuperUserDetector 
 	implements ISuperUserDetector
