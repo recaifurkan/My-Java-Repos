@@ -1,4 +1,4 @@
-# super-user-application
+# Java SuperUser Runner
 Execute Jar's with Administrator privileges
 
 *Note:* On some versions of windows, elevated applications don't always have access to 
@@ -7,34 +7,10 @@ should be run from a non-removable hard drive.
 
 ## Installation
 
-Add the following dependency to your pom.xml
+import with gradle and build and package jar
 
-```
-<dependency>
-	<groupId>com.vnetpublishing.java</groupId>
-	<artifactId>super-user-application</artifactId>
-	<version>0.0.5</version>
-</dependency>
-```
 
-## Building
 
-Checkout this repository and execute the maven installer from the base directory with the pom.xml file in it.
-
-```
-mvn install
-```
-
-Once it is installed you can add it to your projects as a maven dependency.
-
-### Maven Dependency
-```
-<dependency>
-	<groupId>com.vnetpublishing.java</groupId>
-	<artifactId>super-user-application</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
-</dependency>
-```
 ### Example Usage:
 
 ```
@@ -49,7 +25,8 @@ public class TestAdmin extends SuperUserApplication {
 		SU.run(new TestAdmin(), args);
 	}
 	
-	public int run(String[] args) {
+	// when run application is administor
+	public int runAdministor(String[] args) {
 		System.out.println("RUN AS ADMIN! YAY!");
 		try {
 			Thread.sleep(5000);
@@ -58,6 +35,14 @@ public class TestAdmin extends SuperUserApplication {
 		}
 		return 0;
 	}
+	
+	
+	// when run application is not administor
+	@Override
+        public int runNotAdministor() {
+            System.out.println("Not administor");
+            return 0;
+        }
 }
 
 
