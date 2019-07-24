@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.byrfb.Tests" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-07-24T13:28:07" hostname="DESKTOP-98VRG26" time="545.882">
+  <properties/>
+  <testcase name="getJarPAth" classname="com.byrfb.Tests" time="545.882">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

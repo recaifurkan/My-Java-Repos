@@ -10,6 +10,11 @@ public class Line {
 		return line(startPoint.x(),startPoint.y(),startPoint.z(),endPoint.x(),endPoint.y(),endPoint.z());
 	}
 
+
+	/*
+	Alttaki metot başlangıç ve bitiş koordinatları verilen çizginin noktalarının arrayini geri döndürür
+
+	 */
 	public static List<Point> line(float x1, float y1, float z1, float x2, float y2, float z2) {
 		List<Point> points = new ArrayList<Point>();
 //		points.add(new Point(x1, y1, z1));

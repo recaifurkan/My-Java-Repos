@@ -1,0 +1,8 @@
+rootProject.name = 'AdministorTest'
+ext.includeWithPath = { param1, param2 ->
+    include param1
+    project(param1).projectDir = new File(param2)
+}
+includeWithPath(':superuser' , "./libs/super-user-application-master")
+
+
