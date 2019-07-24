@@ -127,16 +127,12 @@
 	</distributionManagement>
 	<developers>
 		<developer>
-			<id>rritoch</id>
-			<name>Ralph Ritoch</name>
-			<email>rritoch@gmail.com</email>
-			<organization>vnetpublishing.com</organization>
-			<organizationUrl>http://www.vnetpublishing.com</organizationUrl>
-			<roles>
-				<role>Project-Administrator</role>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
+			<id>byrfb</id>
+			<name>Recai Furkan Bostancı</name>
+			<email>recaifurkan.rfb@gmail.com</email>
+			
+		
+			<timezone>+3</timezone>
 		</developer>
 	</developers>
 </project>

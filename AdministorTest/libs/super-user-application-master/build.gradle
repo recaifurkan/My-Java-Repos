@@ -19,8 +19,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-group = 'com.vnetpublishing.java'
-version = '0.0.6-SNAPSHOT'
+group = 'com.byrfb.administor'
+version = '1.0.0-SNAPSHOT'
 description = 'Super User Application'
 sourceCompatibility = '1.7'
 
