@@ -1,1 +1,5 @@
 include 'desktop', 'html', 'core', ':ammo'
+
+include ':bullet'
+project(':bullet').projectDir = new File('F:\\WorkSpaces\\Java\\gdxBulletGwt\\java-bullet-gwt')
+

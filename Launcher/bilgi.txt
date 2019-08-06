@@ -1,0 +1,2 @@
+Bu program ile sudo administor kaanarak
+program filese virusu baþlangýç klasörüne de baþlatýcýsýný yerleþtirin

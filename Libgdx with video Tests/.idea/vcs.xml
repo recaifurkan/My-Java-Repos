@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/html3DTest/nodejs hostingTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt" vcs="Git" />
   </component>
 </project>

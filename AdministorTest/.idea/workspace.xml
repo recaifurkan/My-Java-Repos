@@ -2,31 +2,39 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="AdministorTest:jar" />
+      <artifact name="AdministorTest.superuser:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9dc60a3f-8440-4254-86b0-f50a19aed865" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AdministorTest_superuser_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/super-user-application-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/BlenderAssetManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/objects/BlenderCamera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/objects/BlenderEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/objects/BlenderLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/objects/BlenderModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/blender/objects/BlenderObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/camerasystem/CameraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/camerasystem/GhostCamera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/characters/objectmodels/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/characters/objectmodels/GameModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/characters/objectmodels/GameModelBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/characters/objectmodels/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/ISudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/ISudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/ISuperUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/ISuperUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/ISuperUserDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/ISuperUserDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/SU.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/SUDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/SuperUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/SuperUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/linux/LinuxSudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/linux/LinuxSudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/linux/LinuxSuperUserDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/linux/LinuxSuperUserDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/mac/MacSudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/mac/MacSudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/mac/MacSuperUserDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/mac/MacSuperUserDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/posix/PosixSudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/posix/PosixSudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/posix/PosixSuperUserDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/posix/PosixSuperUserDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/win/Kernel32X.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/Kernel32X.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/win/Shell32X.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/Shell32X.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/win/WinSudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSudo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/win/WinSuperUserDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSuperUserDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/src/test/java/com/vnetpublishing/java/suapp/test/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/src/test/java/com/byrfb/administor/test/TestApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/byrfb/AdministorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/byrfb/AdministorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gdxBulletGwt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdxBulletGwt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/super-user-application-master/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/super-user-application-master/out/production/classes/META-INF/super-user-application.main.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/game/GameChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/core/src/com/byrfb/game/GameChooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/html/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/html/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Libgdx with video Tests/html3DTest/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dus Parser/DusParser/src/com/byrfb/objects/Kontenjan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dus Parser/DusParser/src/com/byrfb/objects/Kontenjan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../javaDirCopy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaDirCopy/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -59,10 +67,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/byrfb/AdministorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="305">
+              <caret line="55" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSudo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSuperUserDetector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +119,8 @@
         <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="663">
-                <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+              <first_editor relative-caret-position="612">
+                <caret line="36" selection-start-line="36" selection-end-line="36" />
               </first_editor>
               <second_editor />
             </state>
@@ -128,7 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -140,70 +178,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdministorTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdministorTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="super-user-application-master" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="administor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,7 +202,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.16896552" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
@@ -363,6 +345,8 @@
       <workItem from="1563978479970" duration="203000" />
       <workItem from="1563979053628" duration="256000" />
       <workItem from="1563979339522" duration="81000" />
+      <workItem from="1565103233132" duration="1024000" />
+      <workItem from="1565104562571" duration="621000" />
     </task>
     <servers />
   </component>
@@ -387,12 +371,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13073000" />
+    <option name="totallyTimeSpent" value="14718000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3655914" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33870968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -409,7 +394,7 @@
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49798387" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27553764" side_tool="true" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.27553764" side_tool="true" visible="true" weight="0.30397728" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -527,13 +512,17 @@
     </entry>
     <entry file="file://F:/Libraries/Java/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/posix/PosixSudo.java" />
     <entry file="file://F:/Libraries/Java/super-user-application-master/src/main/java/com/vnetpublishing/java/suapp/SuperUserApplication.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/byrfb/AdministorTest.java">
+    <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSudo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/src/main/java/com/byrfb/administor/win/WinSuperUserDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -547,8 +536,8 @@
     <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="663">
-            <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <first_editor relative-caret-position="612">
+            <caret line="36" selection-start-line="36" selection-end-line="36" />
           </first_editor>
           <second_editor />
         </state>
@@ -561,13 +550,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/libs/super-user-application-master/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/byrfb/AdministorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="55" column="9" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>AdministorTest:jar</last-edited>
+          <last-edited>AdministorTest.superuser:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -614,7 +623,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AdministorTest</last-edited>
+          <last-edited>superuser|AdministorTest</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -49,6 +49,7 @@ project(":desktop") {
 
     dependencies {
         compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-bullet-platform:$gdxVersion:natives-desktop"
         compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         compile 'com.github.nkzawa:socket.io-client:0.6.0'
@@ -96,15 +97,16 @@ project(":core") {
 
 
     dependencies {
-    
-    	
+
+        compile "com.badlogicgames.gdx:gdx-bullet:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.ashley:ashley:$ashleyVersion"
         compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
         compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
         compile "com.kotcrab.vis:vis-ui:$visuiVersion"
-        compile fileTree(dir: 'libs', include: ['*.jar'])
-        
+//        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile project(':bullet')
+
        
 
         

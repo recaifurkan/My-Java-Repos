@@ -16,7 +16,7 @@ public class Kontenjan implements Comparable<Kontenjan> {
 	private float enKucuk;
 	private float enBuyuk;
 	
-	public static int sortIndex = 3;
+
 	public String getUniversite() {
 		return universite;
 	}
@@ -65,6 +65,8 @@ public class Kontenjan implements Comparable<Kontenjan> {
 	public void setEnBuyuk(float enBuyuk) {
 		this.enBuyuk = enBuyuk;
 	}
+
+	public static int sortIndex = 3;
 	@Override
 	public int compareTo(Kontenjan o) {
 		switch (sortIndex) {

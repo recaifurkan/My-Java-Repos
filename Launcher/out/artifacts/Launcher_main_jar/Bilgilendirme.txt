@@ -1,0 +1,5 @@
+Oyunu açmak için zipten çýkartma iþlemi yapabilirsin ama çok elzem deðil
+zipten çýkartmadan da açýlýr
+Oyunu açmak için exe dosyasýný seçebilirsiniz
+java yüklü deðilse exe yi týkladýðýnýz zaman java yükleme sayfasýna otomatik olarak yönlendirilirsiniz
+Hadi iyi eðlenceler

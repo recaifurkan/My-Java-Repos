@@ -1,8 +1,8 @@
 package com.byrfb.game;
 
 import com.badlogic.gdx.ApplicationListener;
-import com.bulletphysics.test.bullet3dcontacttests.BulletTest;
 import com.bulletphysics.test.bullet3dcontacttests.BulletTest1;
+import com.byrfb.bullettests.BulletTest;
 import com.byrfb.libgdxgui.GuiDesign;
 
 //import com.byrfb.gdxvideo.GdxVideoTest;

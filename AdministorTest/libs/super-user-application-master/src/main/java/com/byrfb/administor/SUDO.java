@@ -5,6 +5,8 @@ public class SUDO {
 	private static boolean daemon = false;
 	public static boolean prefer_stdio = false;
 	public static boolean debug = true;
+
+	static boolean isAdmin = false;
 	
 	public static int run(ISuperUserApplication app, String[] args)
 	{
@@ -12,10 +14,15 @@ public class SUDO {
 		
 		if (app.isSuperUser()) {
 			result = app.runAdministor(args);
+			isAdmin = true;
+
 		} else {
 			try{
-				result = app.sudo(args);
-				run(app,args);
+				if(!isAdmin){
+					result = app.sudo(args);
+//					run(app,args);
+				}
+
 			}
 			catch (Exception e){
 				result = app.runNotAdministor();
