@@ -1,0 +1,70 @@
+/**
+ *
+ * Bu proje ile çok güzel bir şekilde herokuya gradle proje deploy edebilir
+ * farklı farklı librarileri gerek gradle mac-ven repo olsun gerekse jar olsun
+ * ekleyip ister jar şekilde çıkartıp library olarak istersen de atrı jar yapıp classpatha ekleyerek
+ * o kütüphaneyi kullnabilirsin
+ * zayen javada http prokololüne göre bir tane server yapmıştın
+ * aynı bu şekiilde bir kaç değişiklik yapman gerekiyodu o değişikliklerini yaparak artık java da istediğin gibi tcp kullanarak kendi serverini oluşturup bu
+ * serveri kullanara internet sitelerini paylaşabilirsin
+ * javayla farklı bir şekilde databse kullanarak heroku da free bir şekilde internet sitelerini ps-aylaşabilirsin
+ * bundan sonra yapacağın işlem artık vue js ile kendi serverini birleştirip
+ * internet siteleri oluşturup yoluna devam etmen olcak
+ *
+ *
+ *
+ */
+
+plugins {
+    id 'java'
+}
+
+group 'com.byrfb'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+
+}
+
+
+jar {
+    baseName = 'app'
+    version = ''
+    manifest {
+        from 'META-INF/MANIFEST.MF'
+    }
+    // bu alttaki from kısmı eklenen classpathları direk har içine fat jar olrak gömer
+//    from {
+//        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//    }
+}
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+// compile edilenleri veya eklenen libararileri direk jarın yanına kopyalar
+// sonra eğer librarileri kulanıyorsan classpatha eklemek için manifest dosyasına classpath diye belirtmen gerekmekte
+// Class-Path: jsoup-1.11.3.jar bu şekilde ekleycen manifest dosyasına
+task copyToLib(type: Copy) {
+    into "$buildDir/libs"
+    from(configurations.compile)
+}
+
+stage.dependsOn(copyToLib)
+
+gradle.taskGraph.whenReady {
+    taskGraph ->
+        if (taskGraph.hasTask(stage)) {
+            test.enabled = false
+        }
+}
+
