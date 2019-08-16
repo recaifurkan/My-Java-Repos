@@ -38,7 +38,7 @@ public class HttpRequest {
 
 		br = new BufferedReader(isReader);
 
-		// alttakiyle en baþta gelenin methodu için okuma yapýlýyor
+		// alttakiyle en baï¿½ta gelenin methodu iï¿½in okuma yapï¿½lï¿½yor
 		String methodLine = br.readLine();
 		readFromComing();
 
@@ -46,17 +46,17 @@ public class HttpRequest {
 		String method = parse.nextToken().toUpperCase(); // we get the HTTP method of the client
 		requestPath = parse.nextToken().toLowerCase();
 		String standart = parse.nextToken();
-		// bi daha gelen bütün verilerin okunmasý yapýlýyor
+		// bi daha gelen bï¿½tï¿½n verilerin okunmasï¿½ yapï¿½lï¿½yor
 
-// 		metoun seçimi yapýlýyor
+// 		metoun seï¿½imi yapï¿½lï¿½yor
 		chooseMethod(method);
 
 	}
 
 	/*
 	 * 
-	 * gelen baðlantýnýn headerini okur return olarak da gelen ilk satýrý yani
-	 * methodun falan yazdýðý kýsmý döndürðr
+	 * gelen baï¿½lantï¿½nï¿½n headerini okur return olarak da gelen ilk satï¿½rï¿½ yani
+	 * methodun falan yazdï¿½ï¿½ï¿½ kï¿½smï¿½ dï¿½ndï¿½rï¿½r
 	 */
 
 	private void readFromComing() throws IOException {
@@ -65,6 +65,7 @@ public class HttpRequest {
 		while ((headerLine = br.readLine()) != null && headerLine.length() != 0) {
 			requestText.append(headerLine);
 			addHeader(headerLine);
+			System.out.println(headerLine);
 
 		}
 	}
@@ -72,7 +73,7 @@ public class HttpRequest {
 	/*
 	 * 
 	 * 
-	 * gelen headirleri ekler iþte
+	 * gelen headirleri ekler iï¿½te
 	 */
 	private void addHeader(String headerLine) {
 		String headerParameters[] = headerLine.split(":", 2);
@@ -82,12 +83,12 @@ public class HttpRequest {
 	}
 
 	/*
-	 * gelen baðlantýnýn türü ne ona göre iþlem yapar
+	 * gelen baï¿½lantï¿½nï¿½n tï¿½rï¿½ ne ona gï¿½re iï¿½lem yapar
 	 * 
 	 * 
 	 */
 	private void chooseMethod(String method) throws IOException {
-// url yi ayýrmak için kullanýlýyor get için parametreler url de
+// url yi ayï¿½rmak iï¿½in kullanï¿½lï¿½yor get iï¿½in parametreler url de
 		String parameters = parseUrl();
 		switch (method) {
 		case "GET":
@@ -120,7 +121,7 @@ public class HttpRequest {
 
 	}
 
-	// url yi ayýrmak için kullanýlýyor get için parametreler url de
+	// url yi ayï¿½rmak iï¿½in kullanï¿½lï¿½yor get iï¿½in parametreler url de
 	private String parseUrl() {
 		String[] requestWithGetParameters = requestPath.split("\\?", 2);
 		requestPath = requestWithGetParameters[0];
@@ -132,7 +133,7 @@ public class HttpRequest {
 	}
 
 	/*
-	 * debug için parametreleri göndermeye yarýyor
+	 * debug iï¿½in parametreleri gï¿½ndermeye yarï¿½yor
 	 * 
 	 */
 	private void sendParameters() {

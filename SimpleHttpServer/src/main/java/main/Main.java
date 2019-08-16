@@ -13,13 +13,20 @@ public class Main {
 	public static final String METHOD_NOT_SUPPORTED = "not_supported.html";
 
 	// port to listen connection
-	static final int PORT = 8080;
+	static int PORT = 8080;
 
 	// verbose mode
 	public static final boolean debug = true;
 
 	public static void main(String[] args) {
 		try {
+
+			for(int i = 0; i < args.length ; i++){
+				if (i == 0) {
+					PORT = Integer.parseInt(args[0]);
+				}
+			}
+
 			ServerSocket serverConnect = new ServerSocket(PORT);
 			System.out.println("Server started.\nListening for connections on port : " + PORT + " ...\n");
 

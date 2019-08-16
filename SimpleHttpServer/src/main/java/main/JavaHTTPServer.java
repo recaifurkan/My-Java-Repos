@@ -30,18 +30,18 @@ public class JavaHTTPServer implements Runnable {
 			request = new HttpRequest(connect.getInputStream(), response);
 			if (request == null && response == null) {
 				if (Main.debug) {
-					System.out.println("Baðlantý oluþturulamadý");
+					System.out.println("Baï¿½lantï¿½ oluï¿½turulamadï¿½");
 					return;
 				}
 			}
 
 			File requestFile = new File(Main.WEB_ROOT, request.getRequestPath());
-			// istenen dosya var mý diye kontrol ediliyor
+			// istenen dosya var mï¿½ diye kontrol ediliyor
 			if (requestFile.exists()) {
-				// eðer anasayfa istenmiþse diye bakýlýyor
+				// eï¿½er anasayfa istenmiï¿½se diye bakï¿½lï¿½yor
 
 				if (request.getRequestPath().equals("/")) {
-					// url de rfb diye parametreli deðiþken gönderilmiþ mi  bakýlýyor
+					// url de rfb diye parametreli deï¿½iï¿½ken gï¿½nderilmiï¿½ mi  bakï¿½lï¿½yor
 					String sonuc = (String) request.getParameter("rfb");
 
 					response.sendText(sonuc);
