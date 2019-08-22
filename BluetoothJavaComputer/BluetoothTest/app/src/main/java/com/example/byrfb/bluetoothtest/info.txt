@@ -1,0 +1,20 @@
+baba ben bu proje de android ile pc bluetooth bağlantısını baya sağla yaptım artık daha napayım
+burada iki tane package var bi tanesi direk video izleye izleye yazdığım var tam çalıştıramadım onu ama o server client şeklinde
+çalışıyor o rfb zaten
+diğeri remote bluetooth var o tam istediğim gibi alışıyor
+onda her şey tek tek thread
+en başta olan cihazlra bakılıyor ordan bağlanma için thread açılıyor
+sonra bağlandıktan sonra yapılcaklar için thread açılıp işlem  tamamlanıyor
+ama bınların hepsini tek sınıfta çalışıtrdım o da connect and send snıfı bu sııfta
+diğerlerinde çalışçak gibi olanalrı toplayıp çalıştırdım
+bluecove ile çatır çatır çalııyor.
+rfb içindeki Anasayfa başlangıç kısmı orayı sağlam kullanıp işlemler yapabilirsin
+ordadn zaten ses açma kapama tuşuna basılı p basılmadığını algılıyorum
+yan bi tür veri göndere tuşu oldu
+ordaki veriyi çok güzzel bir şekilde diğer kısma gönderebiliyorum
+unutma sana gelecek olanı her zaman threadda döngü yap
+göndereceğini metat yap onu zaten göndereceği n zaman kullanırsın hadi eyw bay bi açıkamayazıdm
+
+ama class class tek tek yazmadım az çok anlaşılıyor
+asıl mevzu connect and sendde orda tam çalışan kod duruyo onu sağlam didiklersin
+ha sahi bütü n output streamler güzelce çalışıyor

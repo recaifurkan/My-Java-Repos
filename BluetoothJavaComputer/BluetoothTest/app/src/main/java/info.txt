@@ -1,0 +1,6 @@
+Kardeşim burada sen anroid de bluetooth ile cihaza bağlanıp veri alışverişini yaptın
+burdaki ana sayfa sınıfı main sınıf burada işleme başlıyor ses tuşuna basılımasına göre işlem yapıyorsun
+sendreceive thread sınıfı da bağlantılara bakar
+bağlantılardan cihaza bağlanır
+bağlandığı cihaza da veri alışverişini başlatır
+her zaman gelene bakar sadece gidene de sen istediğin zaman gönderir
