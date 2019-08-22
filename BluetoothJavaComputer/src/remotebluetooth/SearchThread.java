@@ -15,12 +15,12 @@ kardeş bura threaddir
 
  */
 
-public class WaitThread implements Runnable {
+public class SearchThread implements Runnable {
 
     /**
      * Constructor
      */
-    public WaitThread() {
+    public SearchThread() {
     }
 /*
 threadi başlatan sınıf burası gördüğün gibi işlem yapan metodu çağrıyor

@@ -61,6 +61,7 @@ public class ProcessConnectionThread implements Runnable {
                 zaten scanner gelirse alıyor yoksa döngü sürekli dönmüuor
                  */
                 //int command = inputStream.read();
+                String command = "";
 
                 if (sc.hasNext()) {
                     /*
@@ -68,9 +69,9 @@ public class ProcessConnectionThread implements Runnable {
                     burada scanner gelen yazı var  m ı diye bakıyor varsa geri bişey döndürüuor
                     yoksa habire bişey yollamıyor
                      */
-                    String gelen = sc.nextLine();
-                    System.out.println(gelen);
-                    if (gelen.equals("recai + ")) {
+                    command = sc.nextLine();
+                    System.out.println(command);
+                    if (command.equals("recai + ")) {
                         writer.write("furkan + \n");
                         writer.flush();
                         /*
@@ -80,10 +81,10 @@ public class ProcessConnectionThread implements Runnable {
                 }
 
 
-                int command = 1000;
-                System.out.println(command);
+                int commandInt = Integer.parseInt(command);
+                System.out.println(commandInt);
 
-                if (command == EXIT_CMD) {
+                if (commandInt == EXIT_CMD) {
                     System.out.println("finish process");
                     break;
                 }
@@ -91,7 +92,7 @@ public class ProcessConnectionThread implements Runnable {
                 /*
                 burada işte yapan bişeyler belirlemiş gelen komuta göre mousu sağa sola kaydırıyor boş iş
                  */
-                processCommand(command);
+                processCommand(commandInt);
             }
         } catch (Exception e) {
             e.printStackTrace();

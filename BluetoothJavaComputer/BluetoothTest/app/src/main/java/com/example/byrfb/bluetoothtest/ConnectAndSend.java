@@ -164,9 +164,9 @@ public class ConnectAndSend {
             }
 
             public void write(int out) {
-                //                    mmOutStream.write(out);
+//                                    mmOutStream.write(out);
                 PrintWriter writer = new PrintWriter(mmOutStream);
-                writer.write("recai + \n");
+                writer.write(out + "\n");
                 writer.flush();
 
                 // Share the sent message back to the UI Activity

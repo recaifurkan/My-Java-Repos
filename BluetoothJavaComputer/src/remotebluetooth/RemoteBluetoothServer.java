@@ -9,7 +9,7 @@ kardeş bura ana class bekleme yaptıran sınıf burası burada işlem başlar w
 public class RemoteBluetoothServer {
 
     public static void main(String[] args) {
-        Thread waitThread = new Thread(new WaitThread());
+        Thread waitThread = new Thread(new SearchThread());
         waitThread.start();
     }
 }
