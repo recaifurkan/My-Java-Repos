@@ -1,0 +1,9 @@
+rootProject.name = 'BluetoothTest'
+
+include ':blueLib'
+project(':blueLib').projectDir = new File('../')
+
+
+
+
+
