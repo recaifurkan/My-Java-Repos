@@ -1,27 +1,35 @@
-import javax.net.ssl.HttpsURLConnection;
-import java.io.*;
+package com.byrfb;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
 
 /*
- * bu projede yaptýðýmýz custom siteye yazýlan yazýyý  gönderebiliyoruz
- * bununla ddaha faklý þeyler yapabþliri
- * zaten http get post göndermeyi biliyosun burdan ayý þekilde kullanrak gönderebilirsin
+ * bu projede yaptï¿½ï¿½ï¿½mï¿½z custom siteye yazï¿½lan yazï¿½yï¿½  gï¿½nderebiliyoruz
+ * bununla ddaha faklï¿½ ï¿½eyler yapabï¿½liri
+ * zaten http get post gï¿½ndermeyi biliyosun burdan ayï¿½ ï¿½ekilde kullanrak gï¿½nderebilirsin
  * 
  * 
  */
 
-public class Main {
+public class Http {
 
 	private final String USER_AGENT = "Mozilla/5.0";
 
 	String url = "http://www.myfiledepos.tk/getText";
 
+	public Http(String url){
+		if(url != null)
+			this.url = url;
+	}
+
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 
-		Main http = new Main();
+		Http http = new Http(null);
 
 		while (true) {
 			String text = sc.nextLine();
@@ -42,7 +50,7 @@ public class Main {
 	}
 
 	// HTTP GET request
-	private void sendGet(String sendingText) throws Exception {
+	public void sendGet(String sendingText) throws Exception {
 		System.out.println("Testing 1 - Send Http GET request");
 
 		URL obj = new URL(url + sendingText);
@@ -89,7 +97,7 @@ public class Main {
 	}
 
 	// HTTP POST request
-	private void sendPost(String sendingText) throws Exception {
+	public void sendPost(String sendingText) throws Exception {
 
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
