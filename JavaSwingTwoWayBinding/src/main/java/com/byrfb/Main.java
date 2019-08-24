@@ -29,15 +29,29 @@
  *****************************************************************************/
 package com.byrfb;
 
-import py4j.GatewayServer;
+import com.byrfb.gui.BindiableButton;
+import com.byrfb.gui.BindiableLabel;
+import com.byrfb.gui.BindiableTextField;
+import com.byrfb.lang.types.BindiableString;
 
+
+import javax.swing.*;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
+    BindiableString text;
 
+    public BindiableString getValue() {
+        return text;
+    }
+
+    public Main() {
+        text = new BindiableString();
+    }
 
 
     public <T> void getValue(T val) {
@@ -73,9 +87,45 @@ public class Main {
 
     public static void main(String[] args) {
         Main app = new Main();
+        JFrame frame = new JFrame();
 
-        GatewayServer server = new GatewayServer(app);
-        server.start();
+        // custom text field
+        BindiableTextField area = new BindiableTextField();
+        area.bind(app.text);
+        BindiableLabel area2 = new BindiableLabel();
+        area2.bind(app.text);
+        BindiableButton button = new BindiableButton();
+        button.bind(app.text);
+
+
+        JPanel panel = new JPanel();
+        panel.setLayout(null);
+
+        area.getComponent().setSize(200, 20);
+        area2.getComponent().setBounds(200, 0, 200, 20);
+        button.getComponent().setBounds(0, 200, 100, 100);
+        panel.add(area.getComponent());
+        panel.add(area2.getComponent());
+        panel.add(button.getComponent());
+
+        panel.setSize(400, 400);
+        frame.add(panel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+
+        frame.setVisible(true);
+
+
+        /*/
+
+        for two eay binding
+         */
+        Scanner sc = new Scanner(System.in);
+        while (true){
+            app.text.setValue(sc.nextLine());
+        }
+
+
 
     }
 

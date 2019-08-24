@@ -26,10 +26,13 @@ public class Http {
 			this.url = url;
 	}
 
+
+
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
 
 		Http http = new Http(null);
+
 
 		while (true) {
 			String text = sc.nextLine();

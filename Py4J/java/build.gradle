@@ -1,6 +1,15 @@
 plugins {
     id 'java'
 }
+/**
+ * Bu projede java program içeriwsinde python script çalıştırarark java objelerine python içerisinden erişebiliyrosun
+ * bununla birlikte java ile geliştirdiğin projeye python
+ * üzerinden kolayca erişip değişiklikler veya program içerisinde yönlendirmeler yapabilirsin
+ * python scriptini artık java içerisinde kullanabilirsin
+ *
+ *
+ *
+ */
 
 group 'com.byrfb'
 version '1.0-SNAPSHOT'

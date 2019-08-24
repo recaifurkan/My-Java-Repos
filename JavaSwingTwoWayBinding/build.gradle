@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.byrfb'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+/*
+Bu projede two way binding yaparak dışardan değeri değiştirdiğinde o deeğerin bulunduğu bütün yerlerin değiş
+tirilmesi işlemlerini yaptın baya da güzrl çalışıyo
+
+ */
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
