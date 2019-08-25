@@ -1,37 +1,41 @@
 package com.byrfb.gui;
 
-import com.byrfb.lang.DataChangeListener;
-import com.byrfb.lang.types.AbstractBindiableData;
-import com.byrfb.lang.types.BindiableString;
+import javax.swing.text.JTextComponent;
+/*
 
-public abstract class BindiableTextComponent implements DataChangeListener  {
-
-    BindiableString value;
-    private ITextChangeable component;
+bu kend içerisinde set text ve gettext içerdiği için component olarak direk swing gönderilmekte
+ */
+public abstract class BindiableTextComponent extends BindiableComponent  {
 
 
+    private JTextComponent component;
 
-
-    @Override
-    public void bind(AbstractBindiableData data) {
-        if (data instanceof BindiableString) {
-            value = (BindiableString) data;
-            value.addListener(this);
-        } else {
-            new Exception("Cannot solve Type of : " + data.getClass().getName());
-        }
-
+    public BindiableTextComponent(){
+        super.setBindinable(this);
     }
-
 
 
     @Override
     public void onDataChange() {
-        component.setText(value.getValue());
+        setText(value.getValue());
 
     }
 
-    protected void setComponent(ITextChangeable bindiableTextArea) {
+    protected void setComponent(JTextComponent bindiableTextArea) {
         this.component = bindiableTextArea;
+    }
+
+    @Override
+    public String getText() {
+        return component.getText();
+    }
+
+    @Override
+    public void setText(String value) {
+        component.setText(value);
+    }
+
+    public JTextComponent getComponent() {
+        return component;
     }
 }

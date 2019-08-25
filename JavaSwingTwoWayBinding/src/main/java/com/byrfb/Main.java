@@ -29,11 +29,10 @@
  *****************************************************************************/
 package com.byrfb;
 
-import com.byrfb.gui.BindiableButton;
-import com.byrfb.gui.BindiableLabel;
-import com.byrfb.gui.BindiableTextField;
+import com.byrfb.gui.bindiablecomponents.BindiableButton;
+import com.byrfb.gui.bindiablecomponents.BindiableLabel;
+import com.byrfb.gui.bindiabletextcomponents.BindiableTextField;
 import com.byrfb.lang.types.BindiableString;
-
 
 import javax.swing.*;
 import java.io.InputStream;
@@ -42,7 +41,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-
+    /**
+     * burada bindiable string değeri herhangi bir yerde setvalue olursa
+     * bütün notifiairler ile uyarılığ notifiarilerin değerleri değştrilmekte
+     */
     BindiableString text;
 
     public BindiableString getValue() {
