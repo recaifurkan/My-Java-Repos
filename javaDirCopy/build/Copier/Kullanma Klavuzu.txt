@@ -1,0 +1,5 @@
+ownFlash.txt -> bu varsa flashýn senin flashýn olduðunu anlar ve senin flashýný bilgisayara kopyalamaz
+kopyala.txt -> kendi flashýna kopyalanmasýný istediðin klasör içerine bunu atacaksýn sonra kendi flashýný takacaksýn hangi klasör içerisin e
+kopyala txt koymuþsan onu senin flashýna atacak
+
+kopyalana flashlar C:\\winsystem\\datas bu yola kopyalanmkta bu yola gidip kopyala.txt atacan direk ana klasöre koyarsan hepsini atar

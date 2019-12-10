@@ -12,6 +12,7 @@ import console.MusicPlayer;
 import gui.mainviewcomponent.MainPageController;
 import javafx.application.Platform;
 import javazoom.jl.decoder.JavaLayerException;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserThread implements Runnable {
 
@@ -33,7 +34,7 @@ public class BrowserThread implements Runnable {
 
 	MainPageController cont;
 
-	private int sure = 2; // kardeþ 2 sn de bir yeniler
+	private int sure = 2; // kardeï¿½ 2 sn de bir yeniler
 
 	public BrowserThread(String kalkisYeri, String varisYeri, int kisiSayisi, String yolculukTarihi,
 			MainPageController cont) {
@@ -49,7 +50,17 @@ public class BrowserThread implements Runnable {
 	public void run() {
 		setProperties();
 
-		browser = new ChromeDriver();
+		try {
+			browser = new ChromeDriver();
+		}
+		catch (Exception e){
+			if(browser != null){
+				browser.close();
+			}
+
+		}
+
+
 		jsExec = (JavascriptExecutor) browser;
 
 		// Firefox's proxy driver executable is in a folder already
@@ -60,7 +71,7 @@ public class BrowserThread implements Runnable {
 
 		// *[@id="btnSeferSorgula"]
 
-		// aþaðýdaki sayfalar anasayfanýn farklý kombinasyonlarý
+		// aï¿½aï¿½ï¿½daki sayfalar anasayfanï¿½n farklï¿½ kombinasyonlarï¿½
 
 		String pageUrl1 = "https://ebilet.tcddtasimacilik.gov.tr/view/eybis/tnmGenel/tcddWebContent.jsf";
 		String pageUrl2 = "https://ebilet.tcddtasimacilik.gov.tr/view/eybis/tnmGenel/tcddWebContent.jsf?expired=true";
@@ -70,10 +81,10 @@ public class BrowserThread implements Runnable {
 
 			try {
 
-				// aþaðýdaki metot sayfanýn içindeki istenen þnputlarý set eder
+				// aï¿½aï¿½ï¿½daki metot sayfanï¿½n iï¿½indeki istenen ï¿½nputlarï¿½ set eder
 				setInputAdress();
 
-				// aþaðýdaki metottda yazýlacaklarý yazar
+				// aï¿½aï¿½ï¿½daki metottda yazï¿½lacaklarï¿½ yazar
 
 				sendInputsValues();
 
