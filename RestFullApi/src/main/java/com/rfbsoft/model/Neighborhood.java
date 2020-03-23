@@ -39,12 +39,14 @@ public class Neighborhood {
     @Column
     private String name;
 
+
+
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "district_id",updatable = false)
+    @JoinColumn(name = "distric_id",updatable = false)
     @JsonIgnore
     private District district;
 
-    @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="neighborhood")
+    @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Phone> phones = new ArrayList<>();
 
     public Long getId() {

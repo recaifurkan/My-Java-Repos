@@ -31,8 +31,12 @@ public class NeighborhoodController {
 
     @GetMapping("/{id}")
     public ResponseEntity getOne(@PathVariable Long id) {
-        Optional optionalPhone = repo.findById(id);
-        return ResponseEntity.ok(optionalPhone);
+        boolean exist = repo.existsById(id);
+        if(!exist){
+            return new ResponseEntity("District not found",HttpStatus.NOT_FOUND);
+        }
+        Neighborhood neighborhood = repo.findById(id).get();
+        return ResponseEntity.ok(neighborhood);
     }
 
     @PostMapping("/{districtId}")

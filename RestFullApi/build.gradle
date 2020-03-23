@@ -38,6 +38,45 @@ dependencies {
 	}
 }
 
+
+
+
+jar {
+	baseName = "RestFullApi"
+	version = '0.0.1'
+	manifest {
+		attributes "Main-Class": 'com.rfbsoft.SpringRestFull'
+		attributes "Class-Path": configurations.runtime.files.collect { "libs/$it.name" }.join(' ')
+	}
+
+	// bu alttaki from kısmı eklenen classpathları direk har içine fat jar olrak gömer
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+// compile edilenleri veya eklenen libararileri direk jarın yanına kopyalar
+// sonra eğer librarileri kulanıyorsan classpatha eklemek için manifest dosyasına classpath diye belirtmen gerekmekte
+// Class-Path: jsoup-1.11.3.jar bu şekilde ekleycen manifest dosyasına
+task copyToLib(type: Copy) {
+	into "$buildDir/libs/libs"
+	from(configurations.compile)
+}
+
+
+task writeProc()  {
+
+
+	doLast {
+		new File(projectDir, "Procfile").text = "web: java -jar build/libs/"+rootProject.getName()+".jar -p \$PORT"
+	}
+}
+//stage.dependsOn(writeProc)
+//stage.dependsOn(copyToLib)
+
 test {
 	useJUnitPlatform()
 }

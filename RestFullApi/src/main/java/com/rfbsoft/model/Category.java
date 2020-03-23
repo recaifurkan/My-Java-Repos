@@ -1,24 +1,16 @@
 package com.rfbsoft.model;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
-public class Province {
-
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-
-
     @Column
     private String name;
-
-    @OneToMany(fetch=FetchType.EAGER, cascade = CascadeType.ALL, mappedBy="province")
-    private Set<District> districts = new HashSet<>();
 
 
 
@@ -37,13 +29,4 @@ public class Province {
     public void setName(String name) {
         this.name = name;
     }
-
-    public Set<District> getDistricts() {
-        return districts;
-    }
-
-    public void setDistricts(Set<District> districts) {
-        this.districts = districts;
-    }
-
 }

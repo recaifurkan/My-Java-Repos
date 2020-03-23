@@ -15,13 +15,19 @@ public class District {
     @Column
     private String name;
 
+
+
     @OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="district")
     private List<Neighborhood> neighborhoods = new ArrayList<>();
+
+
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "province_id",updatable = false)
     @JsonIgnore
     private Province province;
+
+
 
     public Long getId() {
         return id;

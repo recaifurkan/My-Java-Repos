@@ -4,10 +4,11 @@ package com.rfbsoft.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 
-@Table(name = "telefons")
+@Table()
 
 
 public class Phone {
@@ -22,6 +23,16 @@ public class Phone {
     @Column
     private String no;
 
+    @OneToOne
+    private Category category;
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "neighborhood_id",updatable = false)

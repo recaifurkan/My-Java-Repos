@@ -26,8 +26,14 @@ public class ProvinceController {
 
     @GetMapping("/{id}")
     public ResponseEntity getOne(@PathVariable Long id) {
-        Optional optionalPhone = repo.findById(id);
-        return ResponseEntity.ok(optionalPhone);
+
+        boolean existProvince = repo.existsById(id);
+        if(!existProvince){
+            return new ResponseEntity("Province not found",HttpStatus.NOT_FOUND);
+        }
+        Province province = repo.findById(id).get();
+
+        return ResponseEntity.ok(province);
     }
 
     @PostMapping
