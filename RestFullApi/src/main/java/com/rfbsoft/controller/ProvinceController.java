@@ -1,8 +1,7 @@
 package com.rfbsoft.controller;
 
-
-import com.rfbsoft.model.Phone;
-import com.rfbsoft.repository.PhoneRepository;
+import com.rfbsoft.model.Province;
+import com.rfbsoft.repository.ProvinceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,39 +12,38 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(PhoneController.CONTROLLER_PATH)
-public class PhoneController {
-    public static final String CONTROLLER_PATH = "api/v0/phones";
+@RequestMapping(ProvinceController.CONTROLLER_PATH)
+public class ProvinceController {
+    public static final String CONTROLLER_PATH = "api/v0/provinces";
 
     @Autowired
-    PhoneRepository repo;
+    ProvinceRepository repo;
 
     @GetMapping
-    public List<Phone> getPhones() {
+    public List<Province> get() {
         return repo.findAll();
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity getPhone(@PathVariable Long id){
-        Optional<Phone> optionalPhone = repo.findById(id);
+    public ResponseEntity getOne(@PathVariable Long id) {
+        Optional optionalPhone = repo.findById(id);
         return ResponseEntity.ok(optionalPhone);
     }
 
     @PostMapping
-    public ResponseEntity addPhone(@Valid @RequestBody Phone phone) {
+    public ResponseEntity add(@Valid @RequestBody Province phone) {
 
         return new ResponseEntity(repo.save(phone), HttpStatus.OK);
     }
 
     @PutMapping
-    public ResponseEntity updatePhone(@Valid @RequestBody Phone phone){
-        return new ResponseEntity(repo.save(phone),HttpStatus.OK);
+    public ResponseEntity update(@Valid @RequestBody Province phone) {
+        return new ResponseEntity(repo.save(phone), HttpStatus.OK);
     }
 
     @DeleteMapping
-    public ResponseEntity<?> deletePhone(@Valid @RequestBody Phone phone){
+    public ResponseEntity<?> delete(@Valid @RequestBody Province phone) {
         repo.delete(phone);
         return ResponseEntity.ok("deleted");
     }
-
 }
