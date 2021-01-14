@@ -51,7 +51,7 @@ public class BrowserThread implements Runnable {
 		setProperties();
 
 		try {
-			browser = new ChromeDriver();
+			browser = new FirefoxDriver();
 		}
 		catch (Exception e){
 			if(browser != null){
@@ -143,6 +143,7 @@ public class BrowserThread implements Runnable {
 
 	private void setProperties() {
 		System.setProperty("webdriver.chrome.driver", "libs//selenium//chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver","libs\\selenium\\geckodriver.exe"); // Setting system properties of FirefoxDriver
 
 	}
 

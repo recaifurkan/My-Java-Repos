@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3c05c31-7cde-484a-9e20-a64568d1bc3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/BlenderAssetManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/camerasystem/CameraController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/camerasystem/GhostCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/characters/objectmodels/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/characters/objectmodels/GameModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/characters/objectmodels/GameModelBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/characters/objectmodels/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hotswap_agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html3DTest/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/html3DTest/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html3DTest/html/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/html3DTest/html/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html3DTest/nodejs hostingTest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/html3DTest/nodejs hostingTest/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html3DTest/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/html3DTest/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/bullet3dcontacttests/BulletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/bullet3dcontacttests/BulletTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/html3DTest/.gradle/" />
     <ignored path="$PROJECT_DIR$/html3DTest/build/" />
@@ -95,76 +80,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderObject.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/BlenderAssetManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderEmpty.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderCamera.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="16" selection-start-line="16" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderLight.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderModel.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="62" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html3DTest/desktop/src/com/byrfb/game/desktop/DesktopLauncher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -191,7 +107,6 @@
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/bullet3dcontacttests/objects/Constructor.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/bullet3dcontacttests/Input.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/camerasystem/GameSettings.java" />
-        <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/bullet3dcontacttests/BulletTest.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/camerasystem/WorldInputProcessor.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/BulletTest.java" />
@@ -202,6 +117,7 @@
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderCamera.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/objects/BlenderModel.java" />
         <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/BlenderAssetManager.java" />
+        <option value="$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java" />
       </list>
     </option>
   </component>
@@ -217,86 +133,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html3DTest" type="9c53a853:ProjectViewModuleGroupNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html3DTest" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html3DTest" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="html3DTest" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="byrfb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="byrfb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="byrfb" type="462c0819:PsiDirectoryNode" />
-              <item name="blender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Libgdx with video Tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Libgdx with video Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="html3DTest" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="core" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="byrfb" type="462c0819:PsiDirectoryNode" />
-              <item name="blender" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,16 +229,17 @@
       <workItem from="1564494095241" duration="4143000" />
       <workItem from="1564498421013" duration="1043000" />
       <workItem from="1564505924782" duration="76000" />
+      <workItem from="1585491739519" duration="468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7606000" />
+    <option name="totallyTimeSpent" value="8074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715054" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27553764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -407,6 +247,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Multi-OS Engine" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3096591" />
@@ -421,7 +262,8 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="12" weight="0.32954547" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32954547" />
+      <window_info anchor="bottom" id="Messages" order="14" visible="true" weight="0.32954547" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,35 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/bullet3dcontacttests/BulletTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="188" column="91" lean-forward="true" selection-start-line="188" selection-start-column="35" selection-end-line="188" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/bullet3dcontacttests/BulletTest.java" />
     <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/bullet3dcontacttests/BulletTest.java" />
-    <entry file="file://$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.9/1409aca6a4293a7ca8dbd60281c3211a195dd39a/gdx-1.9.9-sources.jar!/com/badlogic/gdx/math/Intersector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="565" column="29" selection-start-line="565" selection-start-column="29" selection-end-line="565" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../gdxBulletGwt/java-bullet-gwt/src/main/java/com/bulletphysics/test/HelloWorld.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.9/1409aca6a4293a7ca8dbd60281c3211a195dd39a/gdx-1.9.9-sources.jar!/com/badlogic/gdx/math/Intersector.java" />
     <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/camerasystem/WorldInputProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -715,16 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/BulletTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="202" column="23" selection-start-line="202" selection-start-column="23" selection-end-line="202" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html3DTest/core/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -758,20 +565,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html3DTest/desktop/src/com/byrfb/game/desktop/DesktopLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/blender/BlenderAssetManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+        <state relative-caret-position="2189">
+          <caret line="149" column="35" selection-start-line="149" selection-start-column="35" selection-end-line="149" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/bullettests/BulletTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html3DTest/core/src/visui/test/TestIssue131.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html3DTest/core/src/com/byrfb/game/GameChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html3DTest/desktop/src/com/byrfb/game/desktop/DesktopLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
         </state>
       </provider>
     </entry>

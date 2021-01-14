@@ -37,9 +37,6 @@ import java.util.List;
 
 public class Main {
 
-
-
-
     public <T> void getValue(T val) {
         List<Class> listClass = new ArrayList<>();
         listClass.add(String.class);
