@@ -1,0 +1,18 @@
+
+i
+java:S2095A"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(ÀşæÌùÿÿÿÿ
+b
+java:S2095@"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(™Õ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷ıÓé
+?
+java:S2140")Use "java.util.Random.nextInt()" instead.(ö÷à„
+A
+java:S1075"&Remove this hard-coded path-delimiter.(€úıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(µÂ±»ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(»ëïè
+N
+java:S1197'"8Move the array designator from the variable to the type.(¾­úÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(Ñùœàùÿÿÿÿ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(òŒ†È
+M	java:S1065"9Replace this use of System.out or System.err by a logger.(šç2
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(Şàš¬øÿÿÿÿ

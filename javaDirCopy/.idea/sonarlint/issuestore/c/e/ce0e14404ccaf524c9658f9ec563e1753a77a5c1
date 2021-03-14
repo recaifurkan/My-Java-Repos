@@ -1,0 +1,25 @@
+
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷ıÓé
+C
+java:S1604"(Make this anonymous inner class a lambda(€á€‹şÿÿÿÿ
+>
+java:S1604J"(Make this anonymous inner class a lambda(ÉãÃ®
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+\
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+>	java:S108$")Either remove or fill this block of code.(å¥‡
+1
+java:S3626>"Remove this redundant jump.(ÉŠ©ƒ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(¯ë¬¤
+P
+java:S1854N":Remove this useless assignment to local variable "solver".(ßöõ½
+M
+java:S1135S"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(îß»
+M
+java:S1135X"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+A
+java:S1481N"+Remove this unused "solver" local variable.(ßöõ½
