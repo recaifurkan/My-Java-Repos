@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d66cd46e-3304-40dd-99d2-535894b344b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aes/example1/Protector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aes/example1/SimpleProtector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aes/example1/TestProtector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/aes/example1/TestSimpleProtector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotswap_agent.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotswap_agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/encryptDecrypt/sha512/ShaEncrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javaDirCopy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../javaDirCopy/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -78,7 +79,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.TestProtector">
+  <component name="RunManager" selected="Application.ShaEncrypt">
     <configuration name="AES" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aes.AES" />
       <module name="JavaEncrypDecrypt" />
@@ -92,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="encryptDecrypt.Main" />
+    <configuration name="RSAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rsa.RSAUtil" />
       <module name="JavaEncrypDecrypt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="encryptDecrypt.*" />
+          <option name="PATTERN" value="rsa.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RSAUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rsa.RSAUtil" />
+    <configuration name="ShaEncrypt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="encryptDecrypt.sha512.ShaEncrypt" />
       <module name="JavaEncrypDecrypt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rsa.*" />
+          <option name="PATTERN" value="encryptDecrypt.sha512.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShaEncrypt" />
         <item itemvalue="Application.TestProtector" />
         <item itemvalue="Application.TestSimpleProtector" />
         <item itemvalue="Application.AES" />
         <item itemvalue="Application.RSAUtil" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
